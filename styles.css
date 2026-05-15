@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiauMundo 🐱 Blog de Gatos</title>
+    <meta name="description" content="Blog felino dedicado a Coco y Freya. Historia, fisionomía, curiosidades y salud de los gatos.">
+    <meta name="author" content="Juanita Mejía Pineda">
+    <meta name="keywords" content="gatos, felinos, blog, salud felina, historia gatos, curiosidades">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header__logo">
+            <span class="site-header__emoji">🐱</span>
+            <div>
+                <h1 class="site-header__titulo">MiauMundo</h1>
+                <p class="site-header__subtitulo">El universo felino en un solo lugar</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-principal" aria-label="Navegación principal">
+        <ul>
+            <li><a href="#" class="nav-tab activo" data-seccion="inicio">🏠 Inicio</a></li>
+            <li><a href="#" class="nav-tab" data-seccion="historia">📜 Historia</a></li>
+            <li><a href="#" class="nav-tab" data-seccion="fisionomia">🔬 Fisionomía</a></li>
+            <li><a href="#" class="nav-tab" data-seccion="curiosidades">✨ Curiosidades</a></li>
+            <li><a href="#" class="nav-tab" data-seccion="salud">❤️ Salud</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== INICIO ===== -->
+    <div id="seccion-inicio" class="pagina-seccion activa">
+
+        <section class="hero">
+            <div class="hero__contenido">
+                <h2 class="hero__titulo">🐾 Bienvenidos a MiauMundo</h2>
+                <p class="hero__texto">
+                    Descubre todo sobre los <abbr title="animales de la familia Felidae">felinos</abbr> más fascinantes del mundo: su historia, cuerpo, secretos y cómo cuidarlos.
+                </p>
+                <a href="#" class="hero__boton nav-tab" data-seccion="historia">Explorar el blog</a>
+            </div>
+        </section>
+
+        <div class="contenedor">
+
+            <!-- DEDICATORIA -->
+            <section class="dedicatoria">
+                <div class="dedicatoria__encabezado">
+                    <span class="dedicatoria__icono">🐾</span>
+                    <h2 class="dedicatoria__titulo">Este blog está dedicado a mis dos gatos</h2>
+                    <p class="dedicatoria__subtitulo">
+                        Todo el amor del mundo en cuatro patitas. Ellos son la inspiración detrás de cada artículo de MiauMundo.
+                    </p>
+                </div>
+
+                <div class="dedicatoria__gatos">
+                    <div class="dedicatoria__gato">
+                        <div class="dedicatoria__foto-marco">
+                            <img src="img/gato1.jpeg" alt="Mi gato atigrado con suéter navideño" class="dedicatoria__foto">
+                        </div>
+                        <div class="dedicatoria__info">
+                            <h3 class="dedicatoria__nombre">🐱 Coco</h3>
+                            <p class="dedicatoria__descripcion">
+                                Siempre tumbado, siempre elegante... aunque no le convenza el suéter navideño.
+                                Su mirada lo dice todo: "te tolero porque me das de comer". ❤️
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="dedicatoria__gato">
+                        <div class="dedicatoria__foto-marco">
+                            <img src="img/gato2.jpeg" alt="Mi gato negro con suéter navideño" class="dedicatoria__foto">
+                        </div>
+                        <div class="dedicatoria__info">
+                            <h3 class="dedicatoria__nombre">🖤 Freya</h3>
+                            <p class="dedicatoria__descripcion">
+                                Negra como la noche, curiosa como el día. Sus ojitos dorados
+                                brillan más que cualquier estrella. El suéter le queda perfecto. 🌟
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dedicatoria__mensaje">
+                    <blockquote class="dedicatoria__cita">
+                        "Un gato no es simplemente una mascota — es un compañero de vida, una fuente interminable de amor y, a veces, de caos."
+                    </blockquote>
+                </div>
+            </section>
+
+            <!-- PREVIEW DE SECCIONES -->
+            <div class="preview-secciones">
+                <h2 class="seccion-titulo">🗂️ Explora el Blog</h2>
+                <div class="preview-grid">
+                    <div class="preview-card nav-tab" data-seccion="historia">
+                        <div class="preview-card__emoji">📜</div>
+                        <h3>Historia</h3>
+                        <p>De dónde vienen los gatos y su fascinante relación con la humanidad.</p>
+                        <span class="preview-card__btn">Leer más →</span>
+                    </div>
+                    <div class="preview-card nav-tab" data-seccion="fisionomia">
+                        <div class="preview-card__emoji">🔬</div>
+                        <h3>Fisionomía</h3>
+                        <p>El increíble cuerpo felino: sentidos, garras, esqueleto y más.</p>
+                        <span class="preview-card__btn">Leer más →</span>
+                    </div>
+                    <div class="preview-card nav-tab" data-seccion="curiosidades">
+                        <div class="preview-card__emoji">✨</div>
+                        <h3>Curiosidades</h3>
+                        <p>10 cosas sorprendentes sobre los gatos que quizás no sabías.</p>
+                        <span class="preview-card__btn">Leer más →</span>
+                    </div>
+                    <div class="preview-card nav-tab" data-seccion="salud">
+                        <div class="preview-card__emoji">❤️</div>
+                        <h3>Salud</h3>
+                        <p>Guía esencial para mantener a tu gato sano y feliz.</p>
+                        <span class="preview-card__btn">Leer más →</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ===== HISTORIA ===== -->
+    <div id="seccion-historia" class="pagina-seccion">
+        <div class="contenedor">
+            <div class="layout-blog">
+                <main class="blog-main" role="main">
+                    <section>
+                        <h2 class="seccion-titulo">📜 Historia del Gato</h2>
+                        <article class="articulo-completo">
+                            <header>
+                                <span class="articulo-card__categoria">Historia</span>
+                                <h2>¿De dónde vienen los gatos domésticos?</h2>
+                                <p class="articulo-card__meta">
+                                    <time datetime="2026-04-10">🗓 10 de abril, 2026</time>
+                                    <span>✍️ Juanita Mejía Pineda</span>
+                                </p>
+                            </header>
+                            
+
+                            <figure class="articulo-figura">
+                                <img src="img/gato-egipcio-historia.webp" alt="Gato junto a jeroglífico egipcio con la diosa Bastet tallada en piedra" class="articulo-figura__img articulo-figura__img--wide">
+                                <figcaption class="articulo-figura__caption">
+                                    Gatos en el Antiguo Egipto: su imagen quedó grabada en jeroglíficos y templos como símbolo de la diosa <strong>Bastet</strong>.
+                                </figcaption>
+                            </figure>
+
+                            <p>El gato doméstico (<em><mark class="mark-cientifico">Felis catus</mark></em>) desciende del <strong>gato salvaje africano</strong> (<em>Felis silvestris lybica</em>). Su domesticación comenzó hace aproximadamente <strong>10.000 años</strong> en el <strong>Creciente Fértil</strong>, la región del Medio Oriente donde también nació la agricultura.</p>
+                            <blockquote>
+                                <p>"Los gatos no fueron domesticados, ellos eligieron vivir cerca de los humanos porque les era conveniente."</p>
+                                <cite>— Teoría etológica sobre la domesticación felina</cite>
+                            </blockquote>
+                            <h3>La relación con los agricultores</h3>
+                            <p>Cuando los humanos empezaron a almacenar grano, aparecieron los ratones. Los gatos salvajes se acercaron a cazar estas presas fáciles, y los humanos, al ver su utilidad, comenzaron a tolerarlos y eventualmente a adoptarlos.</p>
+                            <h3>Los gatos en el Antiguo Egipto</h3>
+                            <p>En el <strong>Antiguo Egipto</strong> los gatos eran considerados sagrados y estaban asociados a la diosa <strong>Bastet</strong>, diosa de la protección y el hogar. Matar un gato, incluso accidentalmente, podía ser castigado con la muerte.</p>
+                            <div class="dato-curioso">
+                                <span class="dato-curioso__icono">💡</span>
+                                <p class="dato-curioso__texto"><strong>¿Sabías que?</strong> El ADN mitocondrial de los gatos domésticos de todo el mundo se puede rastrear hasta solo <strong>5 hembras</strong> de gato salvaje africano.</p>
+                            </div>
+                            <h3>Expansión por el mundo</h3>
+                            <p>Los gatos se expandieron por el mundo gracias a los barcos mercantes. Los marineros los llevaban a bordo para controlar la plaga de ratones, y así los felinos llegaron a Europa, Asia y eventualmente a América.</p>
+                            <table class="tabla-datos">
+                                <caption>Cronología del gato en la historia humana</caption>
+                                <tr><th>Época</th><th>Región</th><th>Rol del gato</th></tr>
+                                <tr><td>10.000 a.C.</td><td>Creciente Fértil</td><td>Control de plagas</td></tr>
+                                <tr><td>3.500 a.C.</td><td>Egipto</td><td>Animal sagrado</td></tr>
+                                <tr><td>500 a.C.</td><td>Grecia y Roma</td><td>Mascota y cazador</td></tr>
+                                <tr><td>Siglo XV</td><td>Europa y América</td><td>Compañero en barcos</td></tr>
+                            </table>
+                            <footer><p><time datetime="2026-04-10">Publicado el 10 de abril de 2026</time></p></footer>
+                        </article>
+                    </section>
+                </main>
+                <aside class="blog-aside">
+                    <div class="widget">
+                        <h3 class="widget__titulo">📂 Categorías</h3>
+                        <ul class="widget__lista">
+                            <li><a href="#" class="nav-tab" data-seccion="historia">📜 Historia</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="fisionomia">🔬 Fisionomía</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="curiosidades">✨ Curiosidades</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="salud">❤️ Salud</a><span class="widget__count">1</span></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget__titulo">🐾 Datos Rápidos</h3>
+                        <div class="widget__dato"><strong>Nombre científico:</strong> <abbr title="Felis catus — gato doméstico"><em>Felis catus</em></abbr></div>
+                        <div class="widget__dato"><strong>Esperanza de vida:</strong> 12 – 20 años</div>
+                        <div class="widget__dato"><strong>Razas conocidas:</strong> Más de 70</div>
+                        <div class="widget__dato"><strong>Gatos en el mundo:</strong> ~600 millones</div>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget__titulo">📌 Recursos</h3>
+                        <ul class="widget__lista widget__lista--recursos">
+                            <li><a href="https://www.royalcanin.com/es/cats/breeds" target="_blank" rel="noopener">Guía de razas</a></li>
+                            <li><a href="https://www.petopic.com/es/blog/calendario-vacunacion-gatos-2026" target="_blank" rel="noopener">Calendario de vacunas</a></li>
+                            <li><a href="https://www.purina.es/cuidados/gatos/alimentacion/guia" target="_blank" rel="noopener">Alimentación</a></li>
+                            <li><a href="https://veterinarias.com.co/cundinamarca/bogota/" target="_blank" rel="noopener">Encuentra un veterinario</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===== FISIONOMÍA ===== -->
+    <div id="seccion-fisionomia" class="pagina-seccion">
+        <div class="contenedor">
+            <div class="layout-blog">
+                <main class="blog-main">
+                    <section>
+                        <h2 class="seccion-titulo">🔬 Fisionomía del Gato</h2>
+                        <article class="articulo-completo">
+                            <header>
+                                <span class="articulo-card__categoria">Fisionomía</span>
+                                <h2>El increíble cuerpo de un gato</h2>
+                                <p class="articulo-card__meta">
+                                    <time datetime="2026-04-15">🗓 15 de abril, 2026</time>
+                                    <span>✍️ Juanita Mejía Pineda</span>
+                                </p>
+                            </header>
+                            
+                            <h3>Esqueleto y flexibilidad</h3>
+                            <p>El gato tiene <strong>244 huesos</strong> (los humanos tenemos 206; un <abbr title="porcentaje">%</abbr> mayor de flexibilidad vertebral). Su columna vertebral es extremadamente flexible gracias a los discos elásticos entre sus vértebras, lo que les permite girar en el aire y casi siempre caer de pie: el famoso <strong>reflejo de enderezamiento</strong>.</p>
+
+                            <figure class="articulo-figura">
+                                <img src="img/esqueleto-gato.jpg" alt="Diagrama anatómico del esqueleto completo del gato con todas sus partes etiquetadas en español" class="articulo-figura__img articulo-figura__img--wide">
+                                <figcaption class="articulo-figura__caption">
+                                    Anatomía ósea del gato: vértebras cervicales, torácicas, lumbares y caudales, junto con las principales estructuras del esqueleto.
+                                </figcaption>
+                            </figure>
+                            <h3>Los sentidos del gato</h3>
+                            <table class="tabla-datos">
+                                <caption>Comparativa de sentidos: gato vs humano</caption>
+                                <tr><th>Sentido</th><th>Capacidad</th><th>Comparación con humanos</th></tr>
+                                <tr><td>👁️ Vista</td><td>Ve en casi total oscuridad</td><td>6 veces mejor de noche</td></tr>
+                                <tr><td>👂 Oído</td><td>Hasta 65.000 Hz</td><td>3 veces más agudo</td></tr>
+                                <tr><td>👃 Olfato</td><td>200 millones de receptores</td><td>14 veces más potente</td></tr>
+                                <tr><td>😸 Bigotes</td><td>Detectan vibraciones</td><td>Sentido exclusivo felino</td></tr>
+                            </table>
+                            <h3>Las garras retráctiles</h3>
+                            <p>A diferencia de los perros, los gatos tienen garras <strong>retráctiles</strong>: las guardan dentro de una vaina de piel cuando no las usan, lo que las mantiene afiladas.</p>
+                            <div class="dato-curioso">
+                                <span class="dato-curioso__icono">🐾</span>
+                                <p class="dato-curioso__texto"><strong>Ronroneo:</strong> Los gatos ronronean a una frecuencia de entre <strong>25 y 150 Hz</strong>. Se ha demostrado que estas vibraciones pueden acelerar la curación de huesos y tejidos.</p>
+                            </div>
+                            <h3>Temperatura y metabolismo</h3>
+                            <ul>
+                                <li>Temperatura corporal normal: <strong>38 – 39 °C</strong></li>
+                                <li>Frecuencia cardíaca: <strong>140 – 220 latidos/minuto</strong></li>
+                                <li>Frecuencia respiratoria: <strong>20 – 30 respiraciones/minuto</strong></li>
+                                <li>Sueño diario: <strong>12 – 16 horas</strong></li>
+                            </ul>
+                            <footer><p><time datetime="2026-04-15">Publicado el 15 de abril de 2026</time></p></footer>
+                        </article>
+                    </section>
+                </main>
+                <aside class="blog-aside">
+                    <div class="widget">
+                        <h3 class="widget__titulo">📂 Categorías</h3>
+                        <ul class="widget__lista">
+                            <li><a href="#" class="nav-tab" data-seccion="historia">📜 Historia</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="fisionomia">🔬 Fisionomía</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="curiosidades">✨ Curiosidades</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="salud">❤️ Salud</a><span class="widget__count">1</span></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget__titulo">😸 Razas Populares</h3>
+                        <ul class="widget__lista">
+                            <li><span>🐱 Persa</span></li>
+                            <li><span>🐈 Maine Coon</span></li>
+                            <li><span>🐱 Siamés</span></li>
+                            <li><span>🐈 British Shorthair</span></li>
+                            <li><span>🐱 Scottish Fold</span></li>
+                            <li><span>🐈 Ragdoll</span></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget__titulo">📌 Recursos</h3>
+                        <ul class="widget__lista widget__lista--recursos">
+                            <li><a href="https://www.royalcanin.com/es/cats/breeds" target="_blank" rel="noopener">Guía de razas</a></li>
+                            <li><a href="https://www.petopic.com/es/blog/calendario-vacunacion-gatos-2026" target="_blank" rel="noopener">Calendario de vacunas</a></li>
+                            <li><a href="https://www.purina.es/cuidados/gatos/alimentacion/guia" target="_blank" rel="noopener">Alimentación</a></li>
+                            <li><a href="https://veterinarias.com.co/cundinamarca/bogota/" target="_blank" rel="noopener">Encuentra un veterinario</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===== CURIOSIDADES ===== -->
+    <div id="seccion-curiosidades" class="pagina-seccion">
+        <div class="contenedor">
+            <div class="layout-blog">
+                <main class="blog-main">
+                    <section>
+                        <h2 class="seccion-titulo">✨ Cosas Curiosas</h2>
+                        <article class="articulo-completo">
+                            <header>
+                                <span class="articulo-card__categoria">Curiosidades</span>
+                                <h2>10 cosas sorprendentes sobre los gatos</h2>
+                                <p class="articulo-card__meta">
+                                    <time datetime="2026-04-20">🗓 20 de abril, 2026</time>
+                                    <span>✍️ Juanita Mejía Pineda</span>
+                                </p>
+                            </header>
+                            
+
+                            <figure class="articulo-figura">
+                                <img src="img/gato-curioso.webp" alt="Gato blanco con cara de sorpresa con una explosión de fondo" class="articulo-figura__img articulo-figura__img--wide">
+                                <figcaption class="articulo-figura__caption">
+                                    La cara que pone tu gato cuando descubre algo nuevo... o cuando volteas a verlo después de ignorarlo 5 minutos. 😂
+                                </figcaption>
+                            </figure>
+                            <ol>
+                                <li><strong>El gato más viejo vivió 38 años.</strong> Se llamaba <em>Creme Puff</em> y vivió en Austin, Texas, de 1967 a 2005.</li>
+                                <li><strong>Cada nariz es única.</strong> Al igual que las huellas dactilares humanas, el patrón de la nariz de cada gato es completamente único.</li>
+                                <li><strong>No perciben lo dulce.</strong> Los gatos son los únicos mamíferos que no tienen receptores para el sabor dulce en su lengua.</li>
+                                <li><strong>Tienen más de 100 vocalizaciones.</strong> Los perros solo usan unas 10. El "miau" es casi exclusivamente para comunicarse con humanos.</li>
+                                <li><strong>Pueden girar sus orejas 180°.</strong> Tienen 32 músculos en cada oreja.</li>
+                                <li><strong>El "amasado" viene de la infancia.</strong> Los gatitos amasan el vientre de su madre para estimular la producción de leche.</li>
+                                <li><strong>Duermen el 70% de su vida.</strong> Un gato de 9 años solo ha estado despierto unas 3 años.</li>
+                                <li><strong>Su velocidad máxima es de 48 km/h.</strong></li>
+                                <li><strong>Pueden sobrevivir caídas desde gran altura</strong> gracias a su reflejo de enderezamiento.</li>
+                                <li><strong>La huella de "M" en la frente.</strong> Muchos gatos atigrados tienen una marca en forma de M en la frente.</li>
+                            </ol>
+                            <div class="dato-curioso">
+                                <span class="dato-curioso__icono">😸</span>
+                                <p class="dato-curioso__texto"><strong>El gato más rico del mundo</strong> fue <em>Blackie</em>, a quien su dueño millonario Ben Rea le dejó 12,5 millones de dólares en su testamento en 1988.</p>
+                            </div>
+                            <details class="detalle-extra">
+                                <summary>¿Sabías que los gatos tienen su propio día internacional?</summary>
+                                <p>El <strong>8 de agosto</strong> se celebra el <em>Día Internacional del Gato</em>, proclamado en 2002 por el Fondo Internacional para el Bienestar Animal (<abbr title="International Fund for Animal Welfare">IFAW</abbr>). Es uno de los días de celebración de animales más reconocidos en el mundo.</p>
+                            </details>
+                            <footer><p><time datetime="2026-04-20">Publicado el 20 de abril de 2026</time></p></footer>
+                        </article>
+                    </section>
+                </main>
+                <aside class="blog-aside">
+                    <div class="widget">
+                        <h3 class="widget__titulo">📂 Categorías</h3>
+                        <ul class="widget__lista">
+                            <li><a href="#" class="nav-tab" data-seccion="historia">📜 Historia</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="fisionomia">🔬 Fisionomía</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="curiosidades">✨ Curiosidades</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="salud">❤️ Salud</a><span class="widget__count">1</span></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget__titulo">🐾 Datos Rápidos</h3>
+                        <div class="widget__dato"><strong>Esperanza de vida:</strong> 12 – 20 años</div>
+                        <div class="widget__dato"><strong>Gatos en el mundo:</strong> ~600 millones</div>
+                        <div class="widget__dato"><strong>Velocidad máxima:</strong> 48 km/h</div>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget__titulo">📌 Recursos</h3>
+                        <ul class="widget__lista widget__lista--recursos">
+                            <li><a href="https://www.royalcanin.com/es/cats/breeds" target="_blank" rel="noopener">Guía de razas</a></li>
+                            <li><a href="https://www.petopic.com/es/blog/calendario-vacunacion-gatos-2026" target="_blank" rel="noopener">Calendario de vacunas</a></li>
+                            <li><a href="https://www.purina.es/cuidados/gatos/alimentacion/guia" target="_blank" rel="noopener">Alimentación</a></li>
+                            <li><a href="https://veterinarias.com.co/cundinamarca/bogota/" target="_blank" rel="noopener">Encuentra un veterinario</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===== SALUD ===== -->
+    <div id="seccion-salud" class="pagina-seccion">
+        <div class="contenedor">
+            <div class="layout-blog">
+                <main class="blog-main">
+                    <section>
+                        <h2 class="seccion-titulo">❤️ Salud del Gato</h2>
+                        <article class="articulo-completo">
+                            <header>
+                                <span class="articulo-card__categoria">Salud</span>
+                                <h2>Guía básica para mantener sano a tu gato</h2>
+                                <p class="articulo-card__meta">
+                                    <time datetime="2026-04-25">🗓 25 de abril, 2026</time>
+                                    <span>✍️ Juanita Mejía Pineda</span>
+                                </p>
+                            </header>
+                            
+
+                            <figure class="articulo-figura">
+                                <img src="img/gato-veterinario.webp" alt="Gato persa siendo revisado por un veterinario con estetoscopio" class="articulo-figura__img articulo-figura__img--wide">
+                                <figcaption class="articulo-figura__caption">
+                                    Una revisión veterinaria anual es clave para mantener a tu gato sano. La cara no miente — ¡pero es por su bien! 🩺
+                                </figcaption>
+                            </figure>
+                            <h3>Vacunas esenciales</h3>
+                            <table class="tabla-datos">
+                                <caption>Calendario de vacunación felina recomendado</caption>
+                                <tr><th>Vacuna</th><th>¿Qué previene?</th><th>Frecuencia</th></tr>
+                                <tr><td>Triple felina</td><td>Panleucopenia, herpesvirus, calicivirus</td><td>Anual</td></tr>
+                                <tr><td>Rabia</td><td>Virus de la rabia</td><td>Anual o cada 3 años</td></tr>
+                                <tr><td>Leucemia felina</td><td>Leucemia viral felina (FeLV)</td><td>Anual (gatos con acceso exterior)</td></tr>
+                            </table>
+                            <h3>Alimentación saludable</h3>
+                            <p>Los gatos son <strong>carnívoros estrictos</strong> que necesitan proteínas de origen animal para sobrevivir. No pueden sintetizar aminoácidos como la <strong>taurina</strong> por su cuenta.</p>
+                            <ul>
+                                <li>✅ Alimento balanceado de calidad (alto contenido en proteína animal)</li>
+                                <li>✅ Agua fresca disponible siempre</li>
+                                <li>✅ Combinar comida seca y húmeda</li>
+                                <li>❌ Nunca darles cebolla, ajo, chocolate ni uvas</li>
+                                <li>❌ No darles leche de vaca (la mayoría son intolerantes a la lactosa)</li>
+                            </ul>
+                            <div class="dato-curioso">
+                                <span class="dato-curioso__icono">⚠️</span>
+                                <p class="dato-curioso__texto">Lleva a tu gato al veterinario si notas: pérdida de apetito por más de 24h · Dificultad para respirar · Vómitos frecuentes · Pérdida de peso súbita · Letargo extremo.</p>
+                            </div>
+                            <h3>Cuidados básicos del día a día</h3>
+                            <ol>
+                                <li><strong>Esterilización:</strong> Reduce enfermedades. Se recomienda entre los 5 y 6 meses.</li>
+                                <li><strong>Desparasitación:</strong> Interna (cada 3-6 meses) y externa (antipulgas mensual).</li>
+                                <li><strong>Higiene dental:</strong> Usa snacks dentales para prevenir la enfermedad periodontal.</li>
+                                <li><strong>Enriquecimiento ambiental:</strong> Juguetes, rascadores y ventanas con vista.</li>
+                                <li><strong>Visita veterinaria:</strong> Al menos una vez al año para chequeo general.</li>
+                            </ol>
+                            <blockquote>
+                                <p>"Un gato que recibe buena alimentación, atención veterinaria regular y mucho amor puede vivir más de 20 años."</p>
+                                <cite>— Asociación Mundial de Veterinarios Felinos</cite>
+                            </blockquote>
+                            <footer><p><time datetime="2026-04-25">Publicado el 25 de abril de 2026</time></p></footer>
+                        </article>
+                    </section>
+                </main>
+                <aside class="blog-aside">
+                    <div class="widget">
+                        <h3 class="widget__titulo">📂 Categorías</h3>
+                        <ul class="widget__lista">
+                            <li><a href="#" class="nav-tab" data-seccion="historia">📜 Historia</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="fisionomia">🔬 Fisionomía</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="curiosidades">✨ Curiosidades</a><span class="widget__count">1</span></li>
+                            <li><a href="#" class="nav-tab" data-seccion="salud">❤️ Salud</a><span class="widget__count">1</span></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget__titulo">🐾 Datos Rápidos</h3>
+                        <div class="widget__dato"><strong>Nombre científico:</strong> <abbr title="Felis catus — gato doméstico"><em>Felis catus</em></abbr></div>
+                        <div class="widget__dato"><strong>Esperanza de vida:</strong> 12 – 20 años</div>
+                        <div class="widget__dato"><strong>Razas conocidas:</strong> Más de 70</div>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget__titulo">📌 Recursos</h3>
+                        <ul class="widget__lista widget__lista--recursos">
+                            <li><a href="https://www.royalcanin.com/es/cats/breeds" target="_blank" rel="noopener">Guía de razas</a></li>
+                            <li><a href="https://www.petopic.com/es/blog/calendario-vacunacion-gatos-2026" target="_blank" rel="noopener">Calendario de vacunas</a></li>
+                            <li><a href="https://www.purina.es/cuidados/gatos/alimentacion/guia" target="_blank" rel="noopener">Alimentación</a></li>
+                            <li><a href="https://veterinarias.com.co/cundinamarca/bogota/" target="_blank" rel="noopener">Encuentra un veterinario</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="site-footer__grid">
+            <div class="site-footer__col">
+                <h3>🐱 MiauMundo</h3>
+                <p>El blog dedicado a los amantes de los gatos. Información, curiosidades y consejos para cuidar a tu felino.</p>
+                <address class="site-footer__address">
+                    Bogotá, Colombia — 2026<br>
+                    Por <a href="mailto:juanita@ejemplo.com">Juanita Mejía Pineda</a>
+                </address>
+            </div>
+            <div class="site-footer__col">
+                <h3>Secciones</h3>
+                <ul>
+                    <li><a href="#" class="nav-tab" data-seccion="historia">📜 Historia del Gato</a></li>
+                    <li><a href="#" class="nav-tab" data-seccion="fisionomia">🔬 Fisionomía</a></li>
+                    <li><a href="#" class="nav-tab" data-seccion="curiosidades">✨ Curiosidades</a></li>
+                    <li><a href="#" class="nav-tab" data-seccion="salud">❤️ Salud</a></li>
+                </ul>
+            </div>
+            <div class="site-footer__col">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="https://www.royalcanin.com/es/cats/breeds" target="_blank" rel="noopener">🐾 Guía de razas</a></li>
+                    <li><a href="https://www.petopic.com/es/blog/calendario-vacunacion-gatos-2026" target="_blank" rel="noopener">💊 Calendario de vacunas</a></li>
+                    <li><a href="https://www.purina.es/cuidados/gatos/alimentacion/guia" target="_blank" rel="noopener">🍽️ Alimentación</a></li>
+                    <li><a href="https://veterinarias.com.co/cundinamarca/bogota/" target="_blank" rel="noopener">🏥 Encuentra un veterinario</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p><small>© 2026 <span>MiauMundo</span> · Creado con 🐾 por <strong>Juanita Mejía Pineda</strong> · Todos los derechos reservados</small></p>
+        </div>
+    </footer>
+
+    <script>
+        function mostrarSeccion(nombre) {
+            document.querySelectorAll('.pagina-seccion').forEach(s => s.classList.remove('activa'));
+            const target = document.getElementById('seccion-' + nombre);
+            if (target) {
+                target.classList.add('activa');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            document.querySelectorAll('.nav-tab').forEach(a => a.classList.remove('activo'));
+            document.querySelectorAll('[data-seccion="' + nombre + '"]').forEach(a => a.classList.add('activo'));
+        }
+
+        document.addEventListener('click', function(e) {
+            const tab = e.target.closest('.nav-tab');
+            if (tab) {
+                e.preventDefault();
+                const seccion = tab.getAttribute('data-seccion');
+                if (seccion) mostrarSeccion(seccion);
+            }
+        });
+    </script>
+
+</body>
+</html>

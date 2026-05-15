@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520">
+  <defs>
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B6914;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#C9951A;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#A07820;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B5010;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bronzeShine" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8C060;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#6B5010;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0f00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d2200;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D4A017" />
+      <stop offset="50%" style="stop-color:#FFD700" />
+      <stop offset="100%" style="stop-color:#D4A017" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="4" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="520" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Decorative border -->
+  <rect x="8" y="8" width="384" height="504" fill="none" stroke="url(#goldAccent)" stroke-width="2" rx="8" opacity="0.7"/>
+  <rect x="14" y="14" width="372" height="492" fill="none" stroke="#8B6914" stroke-width="1" rx="6" opacity="0.4"/>
+
+  <!-- Hieroglyph-style decorations top -->
+  <g opacity="0.5" fill="#C9951A">
+    <!-- Sun disk -->
+    <circle cx="200" cy="36" r="12" fill="none" stroke="#FFD700" stroke-width="2"/>
+    <line x1="200" y1="20" x2="200" y2="16" stroke="#FFD700" stroke-width="1.5"/>
+    <line x1="200" y1="52" x2="200" y2="56" stroke="#FFD700" stroke-width="1.5"/>
+    <line x1="184" y1="36" x2="180" y2="36" stroke="#FFD700" stroke-width="1.5"/>
+    <line x1="216" y1="36" x2="220" y2="36" stroke="#FFD700" stroke-width="1.5"/>
+    <!-- small ankh left -->
+    <line x1="80" y1="30" x2="80" y2="50" stroke="#C9951A" stroke-width="2"/>
+    <line x1="72" y1="37" x2="88" y2="37" stroke="#C9951A" stroke-width="2"/>
+    <ellipse cx="80" cy="30" rx="8" ry="6" fill="none" stroke="#C9951A" stroke-width="2"/>
+    <!-- small ankh right -->
+    <line x1="320" y1="30" x2="320" y2="50" stroke="#C9951A" stroke-width="2"/>
+    <line x1="312" y1="37" x2="328" y2="37" stroke="#C9951A" stroke-width="2"/>
+    <ellipse cx="320" cy="30" rx="8" ry="6" fill="none" stroke="#C9951A" stroke-width="2"/>
+  </g>
+
+  <!-- === CAT BODY (seated, stylized like Bastet statue) === -->
+  <g filter="url(#shadow)" transform="translate(200, 270)">
+
+    <!-- Base / plinth -->
+    <rect x="-75" y="155" width="150" height="22" rx="4" fill="url(#bronzeGrad)"/>
+    <rect x="-80" y="173" width="160" height="10" rx="3" fill="#6B5010"/>
+    <!-- Gold line on plinth -->
+    <rect x="-75" y="156" width="150" height="3" rx="1" fill="url(#goldAccent)" opacity="0.8"/>
+
+    <!-- Tail curled around base (right side) -->
+    <path d="M 45,130 C 80,120 90,140 70,155 C 60,160 -60,160 -60,155" 
+          fill="none" stroke="url(#bronzeGrad)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 45,130 C 80,120 90,140 70,155 C 60,160 -60,160 -60,155" 
+          fill="none" stroke="url(#bronzeShine)" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Body torso -->
+    <ellipse cx="0" cy="70" rx="52" ry="80" fill="url(#bronzeGrad)"/>
+    <ellipse cx="-8" cy="50" rx="30" ry="50" fill="url(#bronzeShine)" opacity="0.3"/>
+
+    <!-- Front legs -->
+    <rect x="-42" y="110" width="32" height="55" rx="14" fill="url(#bronzeGrad)"/>
+    <rect x="10" y="110" width="32" height="55" rx="14" fill="url(#bronzeGrad)"/>
+    <!-- Paw toes left -->
+    <ellipse cx="-34" cy="164" rx="8" ry="5" fill="#6B5010"/>
+    <ellipse cx="-26" cy="166" rx="7" ry="4" fill="#6B5010"/>
+    <ellipse cx="-18" cy="165" rx="7" ry="4" fill="#6B5010"/>
+    <!-- Paw toes right -->
+    <ellipse cx="18" cy="164" rx="8" ry="5" fill="#6B5010"/>
+    <ellipse cx="26" cy="166" rx="7" ry="4" fill="#6B5010"/>
+    <ellipse cx="34" cy="165" rx="7" ry="4" fill="#6B5010"/>
+
+    <!-- Neck -->
+    <rect x="-26" y="-45" width="52" height="50" rx="20" fill="url(#bronzeGrad)"/>
+
+    <!-- NECKLACE / COLLAR (Egyptian style) -->
+    <path d="M -38,-10 Q 0,-22 38,-10" fill="none" stroke="url(#goldAccent)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M -38,-10 Q 0,-22 38,-10" fill="none" stroke="#FFD700" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <!-- Pendant -->
+    <polygon points="0,-2 -5,8 0,12 5,8" fill="#FFD700"/>
+    <!-- Collar beads -->
+    <circle cx="-30" cy="-8" r="3" fill="#FFD700"/>
+    <circle cx="-18" cy="-14" r="3" fill="#FFD700"/>
+    <circle cx="-6" cy="-17" r="3" fill="#FFD700"/>
+    <circle cx="6" cy="-17" r="3" fill="#FFD700"/>
+    <circle cx="18" cy="-14" r="3" fill="#FFD700"/>
+    <circle cx="30" cy="-8" r="3" fill="#FFD700"/>
+
+    <!-- HEAD -->
+    <!-- Head base -->
+    <ellipse cx="0" cy="-80" rx="46" ry="42" fill="url(#bronzeGrad)"/>
+    <ellipse cx="-10" cy="-90" rx="26" ry="22" fill="url(#bronzeShine)" opacity="0.25"/>
+
+    <!-- Ears (tall triangular cat ears) -->
+    <polygon points="-40,-100 -28,-145 -14,-102" fill="url(#bronzeGrad)"/>
+    <polygon points="-36,-104 -28,-138 -16,-104" fill="#7A5A10" opacity="0.6"/>
+    <polygon points="14,-102 28,-145 40,-100" fill="url(#bronzeGrad)"/>
+    <polygon points="16,-104 28,-138 36,-104" fill="#7A5A10" opacity="0.6"/>
+
+    <!-- EYES (almond-shaped, Egyptian style) -->
+    <!-- Eye whites / base -->
+    <ellipse cx="-16" cy="-84" rx="13" ry="8" fill="#1a0f00"/>
+    <ellipse cx="16" cy="-84" rx="13" ry="8" fill="#1a0f00"/>
+    <!-- Eye gold outline (kohl lines extending outward) -->
+    <path d="M -30,-84 L -29,-84 Q -20,-76 -16,-78 Q -12,-76 -3,-84 L -4,-84" 
+          fill="none" stroke="#D4A017" stroke-width="1.5"/>
+    <path d="M -30,-84 L -29,-84 Q -20,-92 -16,-90 Q -12,-92 -3,-84 L -4,-84" 
+          fill="none" stroke="#D4A017" stroke-width="1.5"/>
+    <!-- Kohl extension lines -->
+    <line x1="-30" y1="-84" x2="-38" y2="-82" stroke="#D4A017" stroke-width="2"/>
+    <line x1="-3" y1="-84" x2="3" y2="-84" stroke="#D4A017" stroke-width="1"/>
+
+    <path d="M 3,-84 L 4,-84 Q 12,-76 16,-78 Q 20,-76 29,-84 L 30,-84" 
+          fill="none" stroke="#D4A017" stroke-width="1.5"/>
+    <path d="M 3,-84 L 4,-84 Q 12,-92 16,-90 Q 20,-92 29,-84 L 30,-84" 
+          fill="none" stroke="#D4A017" stroke-width="1.5"/>
+    <line x1="30" y1="-84" x2="38" y2="-82" stroke="#D4A017" stroke-width="2"/>
+
+    <!-- Pupils (green/amber) -->
+    <ellipse cx="-16" cy="-84" rx="7" ry="5" fill="#2d6b2d"/>
+    <ellipse cx="16" cy="-84" rx="7" ry="5" fill="#2d6b2d"/>
+    <ellipse cx="-16" cy="-84" rx="3" ry="5" fill="#000"/>
+    <ellipse cx="16" cy="-84" rx="3" ry="5" fill="#000"/>
+    <circle cx="-14" cy="-86" r="1.5" fill="white" opacity="0.6"/>
+    <circle cx="14" cy="-86" r="1.5" fill="white" opacity="0.6"/>
+
+    <!-- Nose -->
+    <polygon points="0,-70 -5,-65 5,-65" fill="#5a3008"/>
+
+    <!-- Mouth -->
+    <path d="M -5,-65 Q 0,-60 5,-65" fill="none" stroke="#5a3008" stroke-width="1.5"/>
+
+    <!-- Whisker dots -->
+    <circle cx="-18" cy="-64" r="1.2" fill="#8B6914"/>
+    <circle cx="-18" cy="-68" r="1.2" fill="#8B6914"/>
+    <circle cx="-18" cy="-72" r="1.2" fill="#8B6914"/>
+    <circle cx="18" cy="-64" r="1.2" fill="#8B6914"/>
+    <circle cx="18" cy="-68" r="1.2" fill="#8B6914"/>
+    <circle cx="18" cy="-72" r="1.2" fill="#8B6914"/>
+
+    <!-- Bastet scarab symbol on chest -->
+    <g transform="translate(0, 30)" opacity="0.8">
+      <ellipse cx="0" cy="0" rx="10" ry="7" fill="#D4A017"/>
+      <ellipse cx="0" cy="-4" rx="7" ry="5" fill="#B8860B"/>
+      <line x1="-14" y1="2" x2="-8" y2="0" stroke="#D4A017" stroke-width="1.5"/>
+      <line x1="8" y1="0" x2="14" y2="2" stroke="#D4A017" stroke-width="1.5"/>
+      <line x1="-10" y1="6" x2="-6" y2="3" stroke="#D4A017" stroke-width="1.2"/>
+      <line x1="6" y1="3" x2="10" y2="6" stroke="#D4A017" stroke-width="1.2"/>
+    </g>
+
+  </g>
+
+  <!-- Caption / label -->
+  <text x="200" y="468" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#FFD700" opacity="0.9">Estatuilla de gato — Período Tardío</text>
+  <text x="200" y="484" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#C9951A" opacity="0.7">664 – 30 a.C. · Diosa Bastet · Dominio Público</text>
+
+  <!-- Decorative bottom hieroglyphs -->
+  <g opacity="0.3" fill="none" stroke="#C9951A" stroke-width="1.2">
+    <rect x="40" y="494" width="8" height="12" rx="1"/>
+    <rect x="58" y="494" width="8" height="12" rx="1"/>
+    <line x1="76" y1="494" x2="76" y2="506"/>
+    <circle cx="94" cy="500" r="5"/>
+    <line x1="110" y1="494" x2="110" y2="506"/>
+    <line x1="108" y1="500" x2="122" y2="500"/>
+    <!-- right side mirror -->
+    <rect x="352" y="494" width="8" height="12" rx="1"/>
+    <rect x="334" y="494" width="8" height="12" rx="1"/>
+    <line x1="316" y1="494" x2="316" y2="506"/>
+    <circle cx="298" cy="500" r="5"/>
+    <line x1="282" y1="494" x2="282" y2="506"/>
+    <line x1="280" y1="500" x2="266" y2="500"/>
+  </g>
+</svg>
